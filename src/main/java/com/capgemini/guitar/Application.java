@@ -27,9 +27,9 @@ public class Application {
 //        Guitar g = "Guitar";
 
 
-        int timesPlayed = guitarOfSanne.play();
+      guitarOfSanne.play();
 
-        System.out.println(timesPlayed);
+//        System.out.println(timesPlayed);
 
 
         Guitar eve = new Guitar();

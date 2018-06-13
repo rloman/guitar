@@ -1,9 +1,26 @@
 package com.capgemini.guitar.model;
 
-public class Guitar {
+public class Guitar /* extends Object, never write in code but it is very true */ {
 
-    private int numberOfStrings = -1;
-    private String material = "Plastic";
+    private int numberOfStrings;
+    private String material;
+
+    public double shana;
+
+    public Guitar(String material) {
+        this();
+        this.setMaterial(material);
+    }
+
+    public Guitar(int numberOfStrings) {
+        this.setNumberOfStrings(numberOfStrings);
+    }
+
+
+    public Guitar() {
+        this(6);
+    }
+
 
     public int getNumberOfStrings() {
         return numberOfStrings;
@@ -21,9 +38,7 @@ public class Guitar {
         this.material = material;
     }
 
-    public int play() {
-        System.out.println("Playing guitar");
-
-        return 42;
+    public void play() {
+        System.out.println("Playing normal guitar");
     }
 }
