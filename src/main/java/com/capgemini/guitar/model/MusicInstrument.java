@@ -16,7 +16,3 @@ public abstract class MusicInstrument {
 
 
 }
-
-class StandardRoom extends Room {
-
-}

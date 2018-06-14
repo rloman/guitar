@@ -2,10 +2,11 @@ package com.capgemini.guitar.model;
 
 public class Guitar extends MusicInstrument /* extends Object, never write in code but it is very true */ {
 
+
+    public static int guitarCounter = 0;
+
     private int numberOfStrings;
     private String material;
-
-    public double shana;
 
     public Guitar(String material) {
         this();
@@ -19,6 +20,7 @@ public class Guitar extends MusicInstrument /* extends Object, never write in co
 
     public Guitar() {
         this(6);
+        guitarCounter++;
     }
 
 
