@@ -1,6 +1,6 @@
 package com.capgemini.guitar.model;
 
-public class Guitar /* extends Object, never write in code but it is very true */ {
+public class Guitar extends MusicInstrument /* extends Object, never write in code but it is very true */ {
 
     private int numberOfStrings;
     private String material;
@@ -38,7 +38,12 @@ public class Guitar /* extends Object, never write in code but it is very true *
         this.material = material;
     }
 
+    @Override
     public void play() {
         System.out.println("Playing normal guitar");
+    }
+
+    public void play(String sound) {
+        System.out.println("Playing normal guitar with the sound "+sound);
     }
 }

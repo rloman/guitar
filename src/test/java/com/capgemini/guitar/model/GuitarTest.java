@@ -2,18 +2,14 @@ package com.capgemini.guitar.model;
 
 import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
+
+import java.awt.*;
 
 public class GuitarTest {
 
 
-    private Guitar guitar;
-
-    @Before
-    public void setUp() {
-        this.guitar = new Guitar();
-    }
+    private Guitar guitar = new Guitar();
 
 
     @Test

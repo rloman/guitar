@@ -17,4 +17,18 @@ public class ElectricGuitar extends Guitar {
     public void setElement(String element) {
         this.element = element;
     }
+
+    @Override
+    public void play() {
+        System.out.println("Playing electric guitar");
+    }
+
+    public void play(String sound) {
+        super.play("Play");
+    }
+
+
+    public void playingWithMyElectricGuitar() {
+        System.out.println("Playing with my electrig guitar using my only local method and sub a override");
+    }
 }

@@ -14,9 +14,6 @@ public class Store {
 
     private Map<Integer, Guest> guestStore = new HashMap<>();
 
-    public void add(int i, Guitar g) {
-        this.roomHashMap.put(i, g);
-    }
 
     public void add(int i, Room r) {
         this.roomHashMap.put(i, r);
