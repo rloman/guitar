@@ -1,6 +1,6 @@
 package com.capgemini.guitar.model;
 
-public class Car {
+public class Car extends Vehicle {
 
     private String licensePlate;
     private int mileage;

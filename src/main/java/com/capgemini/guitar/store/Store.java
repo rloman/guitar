@@ -1,6 +1,8 @@
 package com.capgemini.guitar.store;
 
+import com.capgemini.guitar.model.Guest;
 import com.capgemini.guitar.model.Guitar;
+import com.capgemini.guitar.model.Room;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,13 +25,4 @@ public class Store {
         this.guestStore.put(++lastGuestNumber, g);
 
     }
-}
-
-
-class Room {
-
-}
-
-class Guest {
-
 }
