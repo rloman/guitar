@@ -6,12 +6,12 @@ import com.capgemini.guitar.model.MotorCycle;
 import java.util.List;
 
 /**
- This class contains several Date related methods
+ * This class contains several Date related methods
  */
-public class DateUtils {
+public final class DateUtils {
 
-    /** Get days of month
-     *
+    /**
+     * Get days of month
      *
      * @param month =  the month we are interested in
      * @return the days which are in that month
@@ -19,19 +19,6 @@ public class DateUtils {
     public static int getNumberOfDaysInMonth(int month) {
 
         int result = 0;
-
-
-        // dit is een regel with comment and the comments end at the end of the line
-         int i = 45; //my age the rest of the line comment ... e.g. this is for 45 teams
-
-        /*
-
-        Commentblock:
-        start with /*
-
-        end with
-        */
-
 
         switch (month) {
 
@@ -69,12 +56,18 @@ public class DateUtils {
         return result;
     }
 
-    /**
-     *
-     * @param bar
-     * @return some int
-     */
-    public static int foo(int bar) {
-
+    public static int getNumberOfDaysInMonth(int month, int year) {
+        if (month != 2) {
+            return getNumberOfDaysInMonth(month);
+        } else {
+            if (year % 100 == 0 && year / 100 % 4 == 0) {
+                return 29;
+            }
+            if (year % 100 != 0 && year / 4 == 0) {
+                return 29;
+            }
+        }
+        return 28;
     }
+
 }
