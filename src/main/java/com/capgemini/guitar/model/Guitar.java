@@ -48,4 +48,12 @@ public class Guitar extends MusicInstrument /* extends Object, never write in co
     public void play(String sound) {
         System.out.println("Playing normal guitar with the sound "+sound);
     }
+
+    @Override
+    public String toString() {
+        return "Guitar{" +
+                "numberOfStrings=" + numberOfStrings +
+                ", material='" + material + '\'' +
+                '}';
+    }
 }
