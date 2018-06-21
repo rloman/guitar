@@ -7,4 +7,9 @@ public class BasGuitar extends Guitar {
     }
 
 
+    public void playTheBass() {
+
+    }
+
+
 }
