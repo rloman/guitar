@@ -1,11 +1,11 @@
 package com.capgemini.guitar.model;
 
-public abstract class Room {
+public class Room {
 
     private int size;
 
 
-    public abstract void open() ;
+//    public abstract void open() ;
 
 
 }

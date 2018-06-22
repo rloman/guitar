@@ -1,6 +1,6 @@
 package com.capgemini.guitar.model;
 
-public class Guitar extends MusicInstrument /* extends Object, never write in code but it is very true */ {
+public class Guitar extends MusicInstrument implements Comparable<Guitar> /* extends Object, never write in code but it is very true */ {
 
 
     public static int guitarCounter = 0;
@@ -55,5 +55,17 @@ public class Guitar extends MusicInstrument /* extends Object, never write in co
                 "numberOfStrings=" + numberOfStrings +
                 ", material='" + material + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Guitar o) {
+        // the contract is
+        // return 0 when both are equal / the same
+        // return >0 when this / I am greater
+        // return <0 when I am smaller
+
+        // return table.getId() - o.getId();
+
+        return this.getNumberOfStrings() - o.getNumberOfStrings();
     }
 }
